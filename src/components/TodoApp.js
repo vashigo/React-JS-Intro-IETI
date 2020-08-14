@@ -16,7 +16,7 @@ export class TodoApp extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="form-group">
                 <h3>TODO</h3>
                 <TodoList items={this.state.items} />
                 <form onSubmit={this.handleSubmit}>
@@ -26,12 +26,15 @@ export class TodoApp extends React.Component {
                                 Ingrese Texto
                     </label>
                         </div>
-                        <input
-                            id="new-todo"
-                            name="text"
-                            onChange={this.handleChange}
-                            value={this.state.text}
-                        />
+                        <div className=".form">
+                            <input
+                                id="new-todo"
+                                name="text"
+                                onChange={this.handleChange}
+                                value={this.state.text}
+                                className="form-control text"
+                            />
+                        </div>
                     </div>
                     <div>
                         <label>
@@ -39,7 +42,7 @@ export class TodoApp extends React.Component {
                 </label>
                     </div>
                     <div>
-                        <select name="priority" value={this.state.priority} onChange={this.handleChange}>
+                        <select className="form-control select" name="priority" value={this.state.priority} onChange={this.handleChange}>
                             <option value="">Seleccione Prioridad</option>
                             <option value="1">Uno</option>
                             <option value="2">Dos</option>
@@ -49,7 +52,7 @@ export class TodoApp extends React.Component {
                         </select>
                     </div>
                     <br></br>
-                    <button>
+                    <button className="btn btn-primary">
                         Add #{this.state.items.length + 1}
                     </button>
                 </form>

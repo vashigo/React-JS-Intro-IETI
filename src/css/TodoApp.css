@@ -2,3 +2,15 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+.select{
+    margin: auto;
+    width: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.text{
+    margin: auto;
+    width: auto;
+    text-align: center;
+}
