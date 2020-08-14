@@ -4,9 +4,9 @@ export class Todo extends React.Component {
 
     render() {
 
-        return (  
-            <div>
-                <table className="table">
+        return (
+            <div className="table-responsive">
+                <table className="table table-bordered">
                     <thead className="thead-dark">
                         <tr>
                             <th scope="col">id</th>
@@ -21,7 +21,7 @@ export class Todo extends React.Component {
                             <td>{String(this.props.text.date)}</td>
                         </tr>
                     </thead>
-                  
+
                 </table>
 
                 <br></br>
