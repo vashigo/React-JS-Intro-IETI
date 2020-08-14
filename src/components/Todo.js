@@ -2,30 +2,26 @@ import React from 'react';
 
 export class Todo extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }   
-
     render() {
 
         return (  
             <div>
-                <center><table>
-                    <tbody>
-                        
+                <center><table className="table">
+                    <thead className="thead-dark">
                         <tr>
-                            <th>id</th>
-                            <th>texto</th>
-                            <th>priority</th>
-                            <th>dueDate</th>
+                            <th scope="col">id</th>
+                            <th scope="col">texto</th>
+                            <th scope="col">priority</th>
+                            <th scope="col">dueDate</th>
                         </tr>
                         <tr>
-                            <td>{this.props.text.id}</td>
+                            <th scope="row">{this.props.text.id}</th>
                             <td>{this.props.text.text}</td>
                             <td>{this.props.text.priority}</td>
                             <td>{String(this.props.text.date)}</td>
                         </tr>
-                    </tbody>
+                    </thead>
+                  
                 </table></center>
 
                 <br></br>

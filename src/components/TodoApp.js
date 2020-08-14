@@ -68,8 +68,6 @@ export class TodoApp extends React.Component {
         alert("ingrese una prioridad diferente de 0!");
       }
       else{
-      var today = new Date(),
-        date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
       const newItem = {
         text: this.state.text,
         priority: this.state.priority,

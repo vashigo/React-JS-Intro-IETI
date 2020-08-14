@@ -3,10 +3,6 @@ import {Todo} from '../components/Todo'
 
 export class TodoList extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }   
-
     render() {
         return (  
             <div>
