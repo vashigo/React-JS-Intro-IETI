@@ -6,7 +6,7 @@ export class Todo extends React.Component {
 
         return (  
             <div>
-                <center><table className="table">
+                <table className="table">
                     <thead className="thead-dark">
                         <tr>
                             <th scope="col">id</th>
@@ -22,7 +22,7 @@ export class Todo extends React.Component {
                         </tr>
                     </thead>
                   
-                </table></center>
+                </table>
 
                 <br></br>
 
